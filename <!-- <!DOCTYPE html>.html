@@ -1,0 +1,162 @@
+<!-- <!DOCTYPE html>
+```
+
+
+
+
+* `<table>` The main container for the entire table. It holds all the table rows and columns.
+    * `<thead>` Optional element used to group the table header content. It is typically used to group header rows together.
+    * `<tbody>` Optional element used to group the table body content. It groups the main data rows together.
+    * `<tfoot>` Optional element used to group the table footer content. It is used to group footer rows together.
+    * `<tr>` Represents a table row. It contains one or more table cells.
+    * `<th>` Represents a table header cell. It is used to define header cells in the table. By default, the content in `<th>` is bold and centered.
+    * `<td>` Represents a table data cell. It is used to define data cells in the table.
+    * `<td colspan=”2”>` What attribute can be used with the `<td>` or `<th>` elements to indicate that a cell should extend multiple columns. 
+    * `<td rowspan=”2”>` What attribute can be used with the `<td>` or `<th>` elements to indicate that a cell should extend multiple rows. 
+     -->
+
+
+
+
+
+
+
+
+
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="2"> Header </th>
+        <tr>
+            <thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2"> data </td>
+                    <td>Additional data </td>
+                </tr>
+                <tr>
+                    <td> Even More Data</td>
+                </tr>
+            </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">Footer</td>
+        </tr>
+    </tfoot>
+</table>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+[Bootstrap documentation](https://getbootstrap.com/docs/5.3/content/tables/), find out the class name of each section:
+
+# Questions
+
+1. Tables
+    * `class=”table”`
+2. Variants
+    * `class=”table-primary”`
+    * `class=”table-secondary”`
+    * `class=”table-success”`
+    * `class=”table-danger”`
+    * `class=”table-warning”`
+    * `class=”table-info”`
+    * `class=”table-light”`
+    * `class=”table-dark"`
+3. Accented tables 
+    * Striped rows 
+        * `class=”table-striped”`
+    * Striped columns
+        * `class=”Table-striped-columns”`
+4. Hoverable rows (within a `<tbody>`.)
+    * `class=”table-hover”`
+5. Active tables
+    * `class=”table-active”`
+6. Table borders
+    * `class=”table-bordered”`
+7. Tables without borders
+    * `class=”table-borderless”`
+8. Small Tables
+    * `class=”table-sm”`
+9. Table group dividers (Add a thicker border, darker between table groups—`<thead>`, `<tbody>`, and `<tfoot>`)
+    * `class=”table-secondary border top border dark”`
+        * Change color by changing border-topt-color
+10. Vertical alignment 
+    * `class=”align-middle”`
+11. Nesting
+12. Anatomy
+    * Table head
+        * `class=”thead”`
+    * Table body
+        * `class=”tbody”`
+    * Table foot
+        * `class=”tfoot”`
+13. Captions
+    * Put on top	
+        * `class=”caption-top”`
+14. Responsive tables
+    * `class=”table table-responsive.”`
+        * Breakpoint specific
+            * `class=”table table-responsive{-sm|-md|-lg|-xl|-xxl}”` -->
+
+
+
+
+
+
+<div class="container">
+    <!-- Grid columns -->
+    <div class="row">
+        <!-- Grid row -->
+        <div class="col" style="background-color: orange">
+            <h2>Bootstrap Grid System Example</h2>
+            <p>This is a sample content that demonstrates the Bootstrap grid system.</p>
+        </div>
+        <div class="col" style="background-color: green; margin: 20px">
+            <h2>Table Example</h2>
+            <table class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr class="table-warning">
+                        <th>#</th>
+                        <th>Full Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-form">
+                        <td>1</td>
+                        <td>John Doe</td>
+                    </tr>
+                    <tr class="table">
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Mike Johnson</td>
+                    </tr>
+                </tbody>
+                <tfoot class="colspan=2">
+                    <tr>
+                        <td>Footer</td>
+                        <td>. . .</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+
+```
